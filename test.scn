@@ -1,0 +1,22 @@
+#waiting_room[
+    camera[pos[0, 0, 10], rot[0, 180, 0]]
+    image[test-bg.png, scale[1.333, 1, 1]]
+    collider[cube, pos[0, -3, 0], scale[10, 1, 5]]
+    #poca[
+    	mesh[poca.obj, poca.png]
+	dialogue[test.scr, trigger[sphere, scale[1.5]]]
+	pos[3, -1.25, -1]
+	rot[10, 140, 0]
+    ]
+    point_light[10, colour[25, 25, 255], scale[10]]
+    dir_light[1, colour[255, 0, 0], rot[45, 0, 0]]
+    exit#door[other, door, pos[-4, -1, 0], trigger[cube, pos[-4, 0, 0], scale[1, 2, 5]]]
+]
+#other[
+    camera[pos[10, 5, -10], rot[10, -45, 0]]
+    image[test-bg2.png, scale[1.3333, 1, 1]]
+    collider[cube, scale[10, 1, 10], pos[0, 0, 0]]
+    collider[cube, pos[2,  0, 4], scale[10, 10, 1]]
+    collider[cube, pos[-4, 0, 2], scale[1, 10, 10]]
+    exit#door[waiting_room, door, pos[-3, 2, -6], trigger[cube, pos[-2, 0, -2], scale[8, 2, 1]]]
+]

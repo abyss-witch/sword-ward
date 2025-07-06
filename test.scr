@@ -1,0 +1,19 @@
+Hi hello! Hows your day?	$opt[It was mostly ok	$add[ok]	T'was a total YaY!	$add[yay]]
+And I hope thats how it'll stay	$req[yay]
+Well I hope it gets less gray	$req[ok]
+
+And when I rope you to sing not say
+Another line with some options
+$opt[
+	what to rhyme? $opt[
+		fucking POTIONS! 	$add[successful_rhyme]
+		I need some coaching 	$add[force_rhyme]
+		Umm, Green 		$add[fail]
+	]
+	I dont want to do this $add[fail]
+]
+Hey thats fine, so salutaions!			$req[force_rhyme]
+Ingredients nine, for heart palpitations 	$req[successful_rhyme]
+That doesn't rhyme man, you fucked this up. 	$req[fail]
+
+And this line ends this conversation	$req[!fail]
